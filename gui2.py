@@ -51,4 +51,5 @@ class Gui2:
     def update_label(self,newtext):
         """update label text"""
         self.prompt_label.config(text=newtext)
+        return newtext
     

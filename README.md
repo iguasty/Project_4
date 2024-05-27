@@ -49,4 +49,9 @@ C:\Users\isaac\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py:3
 FAILED gui11test.py::test_entry_value - _tkinter.TclError: invalid command name ".!entry"
 
 
+I got the same error for my gui2test.py program except it said:
+
+FAILED gui2test.py::test_entry_value - _tkinter.TclError: invalid command name ".!entry11" 
+
+the ".!entry11" looks like its correlated to the amount of entry_box 's that are created. I changed the number created in gui2.py to 9 instead of 10 and it changed the error to ".!entry10". My guess is that it is trying to insert a value at an index that does not exist. I messed around with it for a while, but I was unable to figure out how to fully fix the error.
 
