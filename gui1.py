@@ -19,7 +19,7 @@ class Gui1:
         self.root.mainloop()
         
     def update_label(self):
-        
+        """update label text"""
         newtext = self.entry_box.get()
         self.prompt_label.config(text=newtext)
         return newtext

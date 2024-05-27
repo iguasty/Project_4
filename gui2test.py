@@ -9,11 +9,11 @@ def gui():
 
 def test_entry_value():
     gui = Gui2()
-    # Simulate entering text in the entry widget
+    # Simulate entering number in the entry boxes
     for i in gui.entry_boxes:
         gui.entry_box.insert(0, i)
         print(i)
-    # Assert the entry value is as expected
+    # Assert the entry number is as expected into the boxes
     for i in gui.entry_boxes:
         assert gui.update_label() == i
 

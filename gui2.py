@@ -12,7 +12,8 @@ class Gui2:
         self.prompt_label = tk.Label(self.root, text="Type text and press enter to change this!")
         self.entry_box = tk.Entry(self.root)
         
-        self.entry_boxes = []
+        
+        self.entry_boxes = [] #list of entry boxes
         
         #creates 10 text boxes and appends them to list
         for i in range(10):

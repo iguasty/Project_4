@@ -16,11 +16,14 @@ Questions:
 
         As previously discussed, the most useful ways to categorize this data would be by time stamp, low values, and high values. Ordering the data set over long periods of time (like months or years) and seeing the value averages over this time period could be useful to determine if efficiency is slowly degrading and can help with preventative maintenance (example would be to replace certain parts if average efficiency is starting to decline). Another way to categorize the data is by the sensors, for instance, there are usually atleast two sensors taking input for the same measurement. This is for redundancy and to help with accuracy. Categorizing the data per sensor can provide insight on the deviation between input values which would be used for determining whether one of the sensors needs recalibrated or replaced. 
 
-    
+    4. Is there any way to automate some tests on these graphical objects? 
+        
+        Yes, we can use libraries like PyTest or PyTest for Tkinter to automate some of the tests on graphical interfaces.
 
     Design: 
 
         I decided to use only one driver file to demonstrate both programs. I made a menu for in the driver file to select which program you would like to run. I did this so I wouldn't have to make a whole new repository and it made reusing code a little bit easier. 
+
 
     PyTest: I attempted to implement PyTest into my code as stated by the requirements for this assignment, however I kept running into the error: 
 
