@@ -24,4 +24,6 @@ class Gui1:
         newtext = self.entry_box.get()
         self.prompt_label.config(text=newtext)
     
-    
+if __name__ == "__main__":
+        gui = Gui1()
+        gui.__init__()
