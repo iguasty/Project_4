@@ -11,7 +11,6 @@ class Gui1:
         self.entry_box = tk.Entry(self.root)
         self.exit_label = tk.Label(self.root, text="Close this window to open GUI2!")
         self.enter_button = tk.Button(self.root, text="Enter", command=self.update_label)
-    
         self.title_label.pack()
         self.prompt_label.pack()
         self.entry_box.pack()
@@ -23,7 +22,11 @@ class Gui1:
         
         newtext = self.entry_box.get()
         self.prompt_label.config(text=newtext)
+        return newtext
     
+    def run(self):
+        self.root.mainloop()
+        
 if __name__ == "__main__":
         gui = Gui1()
-        gui.__init__()
+        gui.run()

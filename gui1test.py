@@ -9,11 +9,9 @@ def gui():
     return gui_instance
 
 def test_entry_value(gui):
-    # Access the entry widget
-    entry_widget = gui.entry_box
-    
+    gui = Gui1()
     # Simulate entering text in the entry widget
-    entry_widget.insert(0,"test input")
+    gui.entry_box.insert(0, str("test input"))
     
     # Assert the entry value is as expected
     assert gui.update_label() == "test input"

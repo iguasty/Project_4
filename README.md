@@ -21,3 +21,32 @@ Questions:
     Design: 
 
         I decided to use only one driver file to demonstrate both programs. I made a menu for in the driver file to select which program you would like to run. I did this so I wouldn't have to make a whole new repository and it made reusing code a little bit easier. 
+
+    PyTest: I attempted to implement PyTest into my code as stated by the requirements for this assignment, however I kept running into the error: 
+
+    ============================================================ FAILURES ============================================================= 
+________________________________________________________ test_entry_value _________________________________________________________
+
+gui = <gui1.Gui1 object at 0x0000020FC2B4E5A0>
+
+    def test_entry_value(gui):
+        gui = Gui1()
+        # Simulate entering text in the entry widget
+>       gui.entry_box.insert(0, str("test input"))
+
+gui11test.py:14:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <tkinter.Entry object .!entry>, index = 0, string = 'test input'
+
+    def insert(self, index, string):
+        """Insert STRING at INDEX."""
+>       self.tk.call(self._w, 'insert', index, string)
+E       _tkinter.TclError: invalid command name ".!entry"
+
+C:\Users\isaac\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py:3140: TclError
+===================================================== short test summary info ===================================================== 
+FAILED gui11test.py::test_entry_value - _tkinter.TclError: invalid command name ".!entry"
+
+
+
